@@ -5,12 +5,14 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Movies from './pages/Movies';
 import AppLayout from './components/layout/AppLayout';
+import ErrorPage from './pages/ErrorPage';
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <AppLayout />,
+      errorElement: <ErrorPage/>,
       children: [
      {
       path: "/",
