@@ -23,6 +23,20 @@ const Header = () => {
                   Home
                 </NavLink>
               </li>
+               <li>
+                <NavLink
+                  to="/movie"
+                  className={({ isActive }) =>
+                    `transition-colors duration-300 px-4 py-2 rounded-lg ${
+                      isActive
+                        ? "bg-white text-gray-800 shadow-lg"
+                        : "bg-gradient-to-r from-yellow-500 to-orange-500 text-white"
+                    } hover:bg-white hover:text-gray-800 hover:shadow-lg`
+                  }
+                >
+                  Movies
+                </NavLink>
+              </li>
               <li>
                 <NavLink
                   to="/about"
@@ -51,20 +65,7 @@ const Header = () => {
                   Contact
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/movie"
-                  className={({ isActive }) =>
-                    `transition-colors duration-300 px-4 py-2 rounded-lg ${
-                      isActive
-                        ? "bg-white text-gray-800 shadow-lg"
-                        : "bg-gradient-to-r from-yellow-500 to-orange-500 text-white"
-                    } hover:bg-white hover:text-gray-800 hover:shadow-lg`
-                  }
-                >
-                  Movies
-                </NavLink>
-              </li>
+             
             </ul>
           </nav>
         </div>

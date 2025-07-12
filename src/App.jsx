@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Movies from './pages/Movies';
 import AppLayout from './components/layout/AppLayout';
 import ErrorPage from './pages/ErrorPage';
+import GetApiData from './api/GetApiData';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -19,17 +20,19 @@ const App = () => {
       element: <Home />,
     },
     {
+      path: "/movie",
+      element: <Movies/>,
+      loader: GetApiData,
+    },
+    {
       path: "/about",
       element: <About />
     },
-    {
+     {
       path: "/contact",
       element: <Contact/>
     },
-    {
-      path: "/movie",
-      element: <Movies/>
-    }]
+  ]
     },
     
   ])
