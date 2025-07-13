@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Card = ({ curMovie }) => {
   const { Poster, imdbID } = curMovie;
   return (
@@ -11,9 +13,12 @@ const Card = ({ curMovie }) => {
         />
  
       {/* button */}
-      <button className="w-full bg-black text-white text-center py-4 mt-10">
+      <NavLink to={`/movie/${imdbID}`}>
+       <button className="w-full bg-black text-white text-center py-4 mt-10">
         Watch Now
       </button>
+      </NavLink>
+     
     </div>
   );
 };

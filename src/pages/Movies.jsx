@@ -7,7 +7,7 @@ const Movies = () => {
   console.log(MoviesData);
   return (
     <div>
-      <div className=" grid grid-cols-4 gap-4 p-20">
+      <div className=" grid grid-cols-4 gap-4 p-30">
         {MoviesData.Search.map((curMovie) => {
           return <Card key={curMovie.imdbID} curMovie={curMovie} />;
         })}
