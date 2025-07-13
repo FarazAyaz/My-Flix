@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <section>
-        <div className="flex items-center justify-between p-4 bg-gradient-to-r from-gray-500 to-gray-800 text-white px-24 mx-10 mt-4  rounded-full">
+        <div className="flex items-center justify-between p-4 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white px-24 mt-4">
           <h1 className="text-2xl font-bold">FarazFlix</h1>
           <nav>
             <ul className="flex space-x-4">
@@ -23,7 +23,7 @@ const Header = () => {
                   Home
                 </NavLink>
               </li>
-               <li>
+              <li>
                 <NavLink
                   to="/movie"
                   className={({ isActive }) =>
@@ -65,7 +65,6 @@ const Header = () => {
                   Contact
                 </NavLink>
               </li>
-             
             </ul>
           </nav>
         </div>
