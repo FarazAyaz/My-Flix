@@ -5,10 +5,10 @@ const Header = () => {
   return (
     <>
       <section>
-        <div className="flex items-center justify-between p-4 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white px-24 mt-4">
+        <div className="flex items-center justify-between p-4 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white px-24 mt-4 ">
           <h1 className="text-2xl font-bold">FarazFlix</h1>
           <nav>
-            <ul className="flex space-x-4">
+            <ul className="flex space-x-4  ">
               <li>
                 <NavLink
                   to="/"
