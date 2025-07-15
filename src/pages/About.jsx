@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-[80vh] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 px-6 py-12">
-      <div className="flex-1 flex flex-col items-start justify-center text-white space-y-6 max-w-xl ml-[15%]">
+    <section className="flex flex-col md:flex-row items-center justify-center min-h-[80vh] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 px-6 py-12 ">
+      <div className="flex-1 flex flex-col items-start justify-center text-white space-y-6 max-w-xl ml-[15%] max-sm:ml-5">
         <h1 className="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg mb-4">
           About <span className="text-pink-500">FarazFlix</span>
         </h1>

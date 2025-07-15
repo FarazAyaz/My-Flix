@@ -5,16 +5,16 @@ const Home = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-center min-h-[80vh] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 px-6 py-12">
       <div className="flex-1 flex flex-col items-start justify-center text-white space-y-6 max-w-xl">
-        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg ml-[20%]">
+        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg ml-[40%] max-sm:ml-5">
           Welcome to <span className="text-pink-500">FarazFlix</span>
         </h1>
-        <p className="text-lg md:text-2xl text-gray-200v ml-[20%]">
+        <p className="text-lg md:text-2xl text-gray-200v ml-[40%] max-sm:ml-5">
           Discover, search, and enjoy your favorite movies with a modern and
           beautiful interface. Dive into the world of cinema with us!
         </p>
         <NavLink
           to="/movie"
-          className="inline-block px-8 py-4 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-lg shadow-lg transition duration-300 text-xl ml-[20%] mt-4"
+          className="inline-block px-8 py-4 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-lg shadow-lg transition duration-300 text-xl ml-[40%] mt-4 max-sm:ml-5"
         >
           Explore Movies
         </NavLink>
